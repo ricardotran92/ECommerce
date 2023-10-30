@@ -9,4 +9,6 @@ Hướng dẫn sync dữ liệu giữa Github và Visual Studio Code: https://v1
 - $ cd /d/Ecommerce/frontend
 - $ npm start
 
-Mỗi người sẽ có 2 tài khoản: user & admin với ví dụ sau: 22220001@gm.uit.edu.vn và 22220001_ad@gm.uit.edu.vn. Mật khẩu: 123456789a!
+Mỗi người sẽ có 2 tài khoản: user & admin với ví dụ sau:
+- user: xxxxxxxx@gm.uit.edu.vn    pass: 123456789a
+- admin: xxxxxxxx_ad@gm.uit.edu.vn    pass: 123456789a
