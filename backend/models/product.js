@@ -13,13 +13,18 @@ const productSchema = new mongoose.Schema({
     maxLength: [5, 'Product name cannot exceed 5 characters'],
     default: 0.0
   },
+  spec: {
+    color: String,
+    size: String,
+    kind: String,
+  },
+  weight: {
+    type: Number,
+    default: 0,
+  },
   description: {
     type: String,
     required: [true, 'Please enter product description'],
-  },
-  ratings: {
-    type: Number,
-    default: 0,
   },
   images: [
     {
@@ -64,6 +69,10 @@ const productSchema = new mongoose.Schema({
     maxLength: [5, 'Product name cannot exceed 5 characters'],
     default: 0
   },
+  ratings: {
+    type: Number,
+    default: 0,
+  },
   numOfReviews: {
     type: Number,
     default: 0
@@ -93,11 +102,11 @@ const productSchema = new mongoose.Schema({
       }
     }
   ],
-  /* user: {
+  user: {
     type: mongoose.Schema.ObjectId,
     ref: 'User',
-    required: true
-  }, */
+    // required: true
+  },
   createdAt: {
     type: Date,
     default: Date.now
